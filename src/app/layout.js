@@ -1,8 +1,7 @@
-import { Inter, Open_Sans } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 
-const inter = Inter({ subsets: ["latin"] });
 const open_sans = Open_Sans({
   subsets: ["latin", "greek"],
   weight: ["300", "400", "500", "600", "700", "800"],

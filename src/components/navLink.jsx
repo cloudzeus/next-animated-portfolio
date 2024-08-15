@@ -1,10 +1,11 @@
-"use cllient";
+"use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NavLink = ({ link }) => {
   const pathName = usePathname();
-  console.log(pathName);
+  console.log(pathName); // Remove this in production
+
   return (
     <Link
       href={link.url}
@@ -14,7 +15,7 @@ const NavLink = ({ link }) => {
           : "bg-transparent text-blue-900"
       }`}
     >
-      {link.title}{" "}
+      {link.title}
     </Link>
   );
 };
