@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 import NavLink from "./navLink";
-import { motion } from "framer-motion";
+import { motion, stagger } from "framer-motion";
 
 const links = [
   { url: "/", title: "Home" },
@@ -47,6 +47,10 @@ const Navbar = () => {
     },
     opened: {
       x: 0,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.25,
+      },
       opacity: 1,
     },
   };
@@ -56,7 +60,7 @@ const Navbar = () => {
       x: -10,
       opacity: 0,
     },
-    opend: {
+    opened: {
       x: 0,
       opacity: 1,
     },

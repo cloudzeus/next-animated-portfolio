@@ -10,14 +10,17 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-inter)"],
         mono: ["var(--font-open-sans)"],
+        helfont: ["helfont"], // Add your custom font family here
       },
       fontWeight: {
-        light: "300", // Use 300 for light
-        normal: "400", // Use 400 for normal
-        medium: "500", // Use 500 for medium
-        semibold: "600", // Use 600 for semibold
-        bold: "700", // Use 700 for bold
-        extrabold: "800", // Use 800 for extrabold
+        100: "100", // Extra Light
+        200: "200", // Thin
+        300: "300", // Light
+        400: "400", // Regular
+        500: "500", // Medium
+        700: "700", // Bold
+        800: "800", // Extra Bold
+        900: "900", // Black
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

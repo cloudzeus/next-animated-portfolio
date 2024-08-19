@@ -1,6 +1,6 @@
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar";
+import TransitionProvider from "@/components/transitionProvider";
 
 const open_sans = Open_Sans({
   subsets: ["latin", "greek"],
@@ -15,13 +15,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={open_sans.className}>
-        <div className="w-screen h-screen bg-gradient-to-b from-blue-50 to-red-100">
-          <div className="h-24 ">
-            <Navbar />
-          </div>
-          <div className="h-[calc(100vh-6rem)] justify-center">{children}</div>
-        </div>
+      <body className="font-helfont font-100">
+        <TransitionProvider>{children}</TransitionProvider>
       </body>
     </html>
   );

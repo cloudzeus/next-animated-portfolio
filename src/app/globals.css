@@ -1,3 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "helfont";
+  src: url("/fonts/CFHelExtLig.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helfont";
+  src: url("/fonts/CFHelThi.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helfont";
+  src: url("/fonts/CFHelReg.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helfont";
+  src: url("/fonts/CFHelMed.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helfont";
+  src: url("/fonts/CFHelBol.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helfont";
+  src: url("/fonts/CFHelExtBol.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helfont";
+  src: url("/fonts/CFHelBla.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Optionally, set the default font family */
+body {
+  font-family: "helfont", sans-serif;
+}
